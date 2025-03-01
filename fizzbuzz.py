@@ -13,3 +13,25 @@
 #13
 #14
 #FizzBuzz
+
+import random
+
+random.seed()
+
+enterNumber = int(input("Please Enter Number: "))
+
+result = 0
+FizzBuzz = 0
+
+for i in range(enterNumber):
+    result = random.randint(0,25)
+    if result == enterNumber * 3:
+        print ("Fizz")
+    elif result == enterNumber * 5:
+        print ("Buzz")
+    elif result == enterNumber * 3 and 5:
+        print ("FizzBuzz")
+    else:
+        FizzBuzz +=1
+
+print (f"{result}")
